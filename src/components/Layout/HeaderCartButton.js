@@ -3,7 +3,8 @@ import classes from "./HeaderCartButton.module.css";
 
 const HeaderCartButton = (props) => {
   return (
-    <button className={classes.button}>
+    // onClick - This is level 3, level 2 is in Header.js, and level 1 is in App.js
+    <button className={classes.button} onClick={props.onClick}>
       <span className={classes.icon}>
         <CartIcon />
       </span>
